@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>subheading</p>
+</body>
+</html>
+
+ DOM Manipulation using id
+
+<p id="one">
+    hello
+</p>
+
+<script>
+    //select paragraph tag using id                     //output: Bye
+    var para=document.getElementById("one")             //Console: hello  
+    console.log(para.textContent)
+    para.textContent="Bye"
+</script> -->
+
+
+<!-- 
+DOM Manipulation Selecting and Manipulating Elements Using ID
+
+Exercise:
+
+• Create hl tag with ID "title" and Set its value to
+Hello World
+• Select the hl tag using
+document.getEIementByld() and change "Hello
+world" to "Bye World"
+
+
+<h1 id="title">Hello World</h1>
+
+<script>
+    var head=document.getElementById("title")
+    console.log(head.textContent)
+    head.textContent="Bye World"
+</script> -->
+
+<!-- Event and Event handler - onclick is a event handler
+
+<h1 id="title">Hello World</h1>
+<button onclick="change()">change</button>
+
+<script>
+    var head=document.getElementById("title")
+    console.log(head.textContent)
+    
+    function change()
+    {
+        head.textContent="Bye World"
+    }
+</script> -->
+
+<!-- DOM Manipulation Exercise
+Create 2 input box with id "numl" and "num2"
+On a button click take the two values from both the boxes and store
+it in a variable called "total"
+Create a p tag with id "result". Everytime user click add button the
+added result should be displayed in p tag 
+
+<input id="num1">                 3 is a string
+<input id="num2">                 6 is a string  
+<button onclick="resultfunction()">add</button>
+<p id="result">result</p>
+
+
+<script>
+   //selecting input box 1
+   //selecting input box 2
+   var box1=document.getElementById("num1")
+   var box2=document.getElementById("num2")
+   //selecting result
+   var result=document.getElementById("result")
+
+
+   function resultfunction()
+       {
+        //assigning values
+        var box1value=Number(box1.value)                     //Number() function used to convert string  to number here
+        var box2value=Number(box2.value)
+
+        var total=box1value+box2value
+        result.textContent=total
+       }
+</script>
+-->
+
+<!-- //random number -->
+
+<!-- <script>
+    var a=math.random()
+    console.log(a)
+</script> -->
+
+guess the number game (important)
+
+<!-- <h1>Guess the Number from 1 to  10</h1>
+<input id="guessnumber">
+<button onclick="check()">Check</button>
+<p id="result">you are Wrong/Right</p>
+<p id="score">your score:10</p>
+
+<script>
+    //selecting the input box
+    var guessnumber=document.getElementById("guessnumber")
+
+    var result=document.getElementById("result")
+    var totalscore=document.getElementById("score")
+
+    var RandomNumber=Math.floor(Math.random()*10)+1
+    var totalscore=10
+
+    function check()
+    {
+      var enterednumber = guessnumber.value
+      if(RandomNumber==enterednumber)
+      {
+        console.log("Right")
+        result.textContent="Right"
+        alert("you won.....!")
+      }
+      else
+      {
+        totalscore=totalscore-1   
+        score.textContent="score:"+totalscore                //when the answer is wrong score decrese by 1
+        result.textContent="Wrong"
+      }
+    }
+</script>
+ -->
+
+ 
